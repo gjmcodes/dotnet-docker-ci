@@ -1,0 +1,9 @@
+version : '3'
+
+services:
+        restapi:
+            image: docker-ci-api
+            build: 
+                context: .
+            ports:
+                - "8001:80"
